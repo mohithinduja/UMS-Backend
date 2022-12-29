@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import com.app.registration.model.UserRegister;
 import com.app.registration.repository.RegistrationRepository;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,6 +17,7 @@ public class RegistrationService {
 	private RegistrationRepository repo;
 	
 	public UserRegister saveUser(UserRegister user) {
+		
 		return repo.save(user);
 	}
 	
